@@ -1,8 +1,9 @@
+import { FC } from "react";
+import "semantic-ui-css/semantic.min.css";
 import { Container, Input, List, Segment } from "semantic-ui-react";
-
 import "./App.css";
 
-function App() {
+const App: FC = () => {
   return (
     <div className="App">
       <Container text>
@@ -19,6 +20,6 @@ function App() {
       </Container>
     </div>
   );
-}
+};
 
 export default App;
