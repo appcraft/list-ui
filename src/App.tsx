@@ -1,8 +1,12 @@
+import { FC } from "react";
+import "semantic-ui-css/semantic.min.css";
 import { Container, Input, List, Segment } from "semantic-ui-react";
-
 import "./App.css";
 
-function App() {
+// Semantic-UI Documentation : https://react.semantic-ui.com/
+// Lodash Documentation : https://lodash.com/docs/4.17.15
+
+const App: FC = () => {
   return (
     <div className="App">
       <Container text>
@@ -19,6 +23,6 @@ function App() {
       </Container>
     </div>
   );
-}
+};
 
 export default App;
