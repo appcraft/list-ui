@@ -6,10 +6,13 @@ import "./App.css";
 // Semantic-UI Documentation : https://react.semantic-ui.com/
 // Lodash Documentation : https://lodash.com/docs/4.17.15
 
+const userApi = "/public/users.json"
+
 const orderOptions = [{ key: "lastName", value: "lastName", text: "Nom" }, { key: "firstName", value: "firstName", text: "Prénom" }, { key: "company", value: "company", text: "Société" }]
 const groupByOptions = [{ key: "", value: "", text: "Pas de groupe" }, { key: "company", value: "company", text: "Société" }, { key: "jobTitle", value: "jobTitle", text: "Entreprise" }]
 
 const App: FC = () => {
+
   const handleFilterChange = (_e: any, { value }: { value: string }) => { }
 
   const handleOrderChange = (_e: any, { value }: { value?: any }) => { }
@@ -19,7 +22,7 @@ const App: FC = () => {
   return (
     <div className="App">
       <Container text>
-        <Header> AppCraft List UI</Header>
+        <Header>AppCraft List UI</Header>
         <Menu>
           <Menu.Item>
             <Input placeholder="Chercher" onChange={handleFilterChange} icon="search" />
